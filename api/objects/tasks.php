@@ -1,11 +1,12 @@
 <?php
-class Users {
+class Tasks {
 
    
     private $conn;
-    private $table_name = "user_jobs";
+    private $table_name = "tasks";
 
- 
+    
+   
 
     // конструктор для соединения с базой данных 
     public function __construct($db){
@@ -15,7 +16,7 @@ class Users {
     function read(){
 
         // выбираем все записи 
-        $query = "SELECT * FROM `user_jobs` ";
+        $query = "SELECT * FROM `tasks` ";
        
         
         // подготовка запроса 
